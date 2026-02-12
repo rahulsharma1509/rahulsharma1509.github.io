@@ -3,83 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rahul Sharma | Enterprise Solutions Architect</title>
+<title>Rahul Sharma | Principal Solutions Architect</title>
 
-<meta name="description" content="Rahul Sharma - Enterprise Solutions Architect specializing in AI-driven CX, CPaaS, CCaaS, API integrations, and cloud-native systems.">
-<meta property="og:title" content="Rahul Sharma | Enterprise Solutions Architect">
-<meta property="og:description" content="Architecting enterprise-scale AI-powered customer experience platforms.">
+<meta name="description" content="Rahul Sharma - Principal Solutions Architect specializing in AI-driven enterprise CX, CPaaS, CCaaS, distributed systems and API-first platforms.">
+<meta property="og:title" content="Rahul Sharma | Principal Solutions Architect">
+<meta property="og:description" content="Architecting AI-first enterprise customer experience platforms at global scale.">
 <meta property="og:type" content="website">
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: linear-gradient(to bottom, #f5f6f8, #ffffff);
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #f3f4f7 0%, #ffffff 100%);
     color: #1a1a1a;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1100px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 80px 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero img {
+    width: 260px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 h1 {
-    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
 h2 {
-    font-size: 24px;
-    margin-top: 60px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-top: 80px;
     margin-bottom: 20px;
     font-weight: 500;
-    color: #2c3e50;
+    color: #243447;
 }
 
-p {
+.subtitle {
+    font-size: 18px;
+    color: #4a5568;
+}
+
+.tagline {
+    margin-top: 20px;
     font-size: 16px;
-    color: #444;
+    color: #555;
+    max-width: 600px;
 }
 
 .button {
     display: inline-block;
-    padding: 12px 20px;
-    margin-right: 10px;
-    margin-top: 20px;
+    padding: 12px 24px;
+    margin-right: 12px;
+    margin-top: 25px;
     border-radius: 6px;
     text-decoration: none;
     font-size: 14px;
-    border: 1px solid #2c3e50;
-    color: #2c3e50;
+    border: 1px solid #243447;
+    color: #243447;
+    transition: all 0.3s ease;
 }
 
 .button.primary {
-    background-color: #2c3e50;
+    background-color: #243447;
     color: white;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
 }
 
 .card {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #e6e6e6;
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 footer {
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
     font-size: 14px;
     color: #777;
 }
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 </style>
 </head>
 
@@ -87,73 +149,84 @@ footer {
 
 <div class="container">
 
-<h1>Rahul Sharma</h1>
-<p><strong>Enterprise Solutions Architect | AI-Driven CX | CPaaS & CCaaS</strong></p>
-<p>Architecting enterprise-scale AI-powered customer experience platforms for global technology organizations.</p>
-
-<a href="Rahul_Sharma_Resume.pdf" class="button primary" target="_blank">Download Resume</a>
-<a href="https://www.linkedin.com/in/rahul-sharma-8b9792142/" class="button" target="_blank">Connect on LinkedIn</a>
-
-<h2>Executive Summary</h2>
-<p>
-Solutions Architect with 11+ years of experience delivering enterprise SaaS, CPaaS, and CCaaS solutions.
-Specialized in AI agents, LLM-augmented workflows, RESTful API integrations, and cloud-native distributed systems.
-Strong focus on compliance-aware architecture aligned with GDPR and HIPAA standards.
-</p>
-
-<h2>Core Capabilities</h2>
-<div class="grid">
-<div class="card">Enterprise Architecture & Distributed Systems</div>
-<div class="card">CPaaS & CCaaS Integration</div>
-<div class="card">REST APIs & SDK Implementations</div>
-<div class="card">AI Agents & LLM Workflows</div>
-<div class="card">Platform & API Economy Strategy</div>
-<div class="card">Security & Compliance Frameworks</div>
+<div class="hero fade-in">
+    <div class="hero-text">
+        <h1>Rahul Sharma</h1>
+        <div class="subtitle">Principal Solutions Architect | AI-Driven Enterprise CX</div>
+        <div class="tagline">
+            Architecting AI-first, enterprise-scale customer experience platforms across CPaaS, CCaaS, and distributed cloud-native systems for global technology organizations.
+        </div>
+        <a href="Rahul_Sharma_Resume.pdf" class="button primary" target="_blank">Download Resume</a>
+        <a href="https://www.linkedin.com/in/rahul-sharma-8b9792142/" class="button" target="_blank">Connect on LinkedIn</a>
+    </div>
+    <img src="profile.jpg" alt="Rahul Sharma">
 </div>
 
-<h2>Selected Enterprise Engagements</h2>
-<p><strong>AI Virtual Agent Automation</strong><br>
-Reduced manual support load through AI-driven workflows and intelligent routing architecture.</p>
-
-<p><strong>Enterprise CPaaS API Integration</strong><br>
-Accelerated go-live timelines by designing scalable API-first integration frameworks.</p>
-
-<p><strong>Contact Center Optimization</strong><br>
-Improved uptime by 35% through SIP trace analysis and system performance tuning.</p>
-
-<h2>Architecture Philosophy</h2>
-<p>
-AI-first, API-centric design. Focused on scalable, event-driven systems that integrate seamlessly across CRM, communication platforms, and cloud infrastructure while maintaining compliance and performance integrity.
+<h2 class="fade-in">Executive Profile</h2>
+<p class="fade-in">
+Enterprise Solutions Architect with 11+ years of experience delivering scalable SaaS, CPaaS, and CCaaS platforms. Leading AI-driven modernization initiatives integrating LLM workflows, API ecosystems, and compliance-aware cloud infrastructure across global environments.
 </p>
 
-<h2>Technical Stack</h2>
-<p>
-Cloud: AWS<br>
-Platforms: Sendbird, Avaya, Verint, NICE<br>
-APIs: RESTful APIs, SDKs<br>
-AI: AI Agents, LLM Workflows<br>
-Databases: MySQL, PostgreSQL<br>
-Tools: Postman, GitHub, Grafana, Datadog
+<h2 class="fade-in">Core Capabilities</h2>
+<div class="grid fade-in">
+<div class="card">Enterprise Architecture & Distributed Systems</div>
+<div class="card">CPaaS & CCaaS Platform Integration</div>
+<div class="card">API-First & SDK Implementation Strategy</div>
+<div class="card">AI Agents & LLM Workflow Orchestration</div>
+<div class="card">Platform & API Economy Leadership</div>
+<div class="card">Security & Compliance (GDPR, HIPAA)</div>
+</div>
+
+<h2 class="fade-in">Selected Enterprise Engagements</h2>
+<p class="fade-in">
+<strong>AI Virtual Agent Modernization</strong><br>
+Designed intelligent automation workflows reducing manual support dependency and accelerating first-contact resolution.
 </p>
 
-<h2>Certifications</h2>
-<p>
+<p class="fade-in">
+<strong>Enterprise CPaaS Integration Program</strong><br>
+Led API-first integration architecture enabling accelerated deployment timelines across distributed systems.
+</p>
+
+<p class="fade-in">
+<strong>Contact Center Reliability Engineering</strong><br>
+Improved service uptime by 35% through deep SIP trace diagnostics and performance optimization.
+</p>
+
+<h2 class="fade-in">Architecture Philosophy</h2>
+<p class="fade-in">
+AI-first, platform-centric system design with emphasis on scalability, interoperability, and operational resilience. Strong focus on API economy strategy and secure cloud-native deployments.
+</p>
+
+<h2 class="fade-in">Certifications</h2>
+<p class="fade-in">
 ITIL® 4 Foundation<br>
 ACIS – Avaya Certified Implementation Specialist
 </p>
 
-<h2>Contact</h2>
-<p>
+<h2 class="fade-in">Contact</h2>
+<p class="fade-in">
 Bengaluru, India<br>
-Email: raol.sharma15@gmail.com<br>
-LinkedIn: linkedin.com/in/rahul-sharma-8b9792142
+raol.sharma15@gmail.com
 </p>
 
 </div>
 
 <footer>
-© 2026 Rahul Sharma. All rights reserved.
+© 2026 Rahul Sharma
 </footer>
+
+<script>
+const faders = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+});
+faders.forEach(fade => observer.observe(fade));
+</script>
 
 </body>
 </html>
