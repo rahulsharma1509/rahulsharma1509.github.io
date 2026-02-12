@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -36,29 +35,17 @@ body {
 }
 
 .image-wrapper {
-    position: relative;
     width: 280px;
     height: 280px;
     border-radius: 50%;
     overflow: hidden;
-}
-
-.image-wrapper::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(36,52,71,0.1);
-    backdrop-filter: blur(8px);
-    border-radius: 50%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
 .image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
 }
 
 h1 {
@@ -117,8 +104,8 @@ h2 {
     margin-bottom: 15px;
     padding: 20px;
     cursor: pointer;
-    transition: all 0.3s ease;
     background: white;
+    transition: 0.3s ease;
 }
 
 .capability:hover {
@@ -128,14 +115,22 @@ h2 {
 .capability-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    opacity: 0;
+    transition: all 0.4s ease;
     font-size: 14px;
     color: #555;
 }
 
 .capability.active .capability-content {
-    max-height: 200px;
+    max-height: 300px;
+    opacity: 1;
     margin-top: 10px;
+}
+
+.section-text {
+    font-size: 15px;
+    color: #555;
+    max-width: 800px;
 }
 
 footer {
@@ -151,7 +146,6 @@ footer {
         text-align: center;
     }
 }
-
 </style>
 </head>
 
@@ -164,7 +158,7 @@ footer {
         <h1>Rahul Sharma</h1>
         <div class="subtitle">Principal Solutions Architect | AI-Driven Enterprise CX</div>
         <div class="tagline">
-            Architecting AI-first, enterprise-scale customer experience platforms across CPaaS, CCaaS and distributed cloud-native ecosystems.
+            Architecting AI-first, enterprise-scale customer experience platforms across CPaaS, CCaaS, distributed systems and cloud-native ecosystems.
         </div>
         <a href="Rahul_Sharma_Resume.pdf" class="button primary" target="_blank">Download Resume</a>
         <a href="https://www.linkedin.com/in/rahul-sharma-8b9792142/" class="button" target="_blank">Connect on LinkedIn</a>
@@ -178,25 +172,50 @@ footer {
 <h2>Core Capabilities</h2>
 
 <div class="capability">
-    Enterprise Architecture & Distributed Systems
-    <div class="capability-content">
-        Designing scalable, event-driven architectures aligned with SLA, security, and performance requirements.
-    </div>
+Enterprise Architecture & Distributed Systems
+<div class="capability-content">
+Designing scalable, event-driven architectures aligned with SLA, compliance and high-availability standards.
+</div>
 </div>
 
 <div class="capability">
-    CPaaS & CCaaS Integration
-    <div class="capability-content">
-        Leading API-first integrations across messaging, voice, CRM and contact center platforms.
-    </div>
+CPaaS & CCaaS Platform Integration
+<div class="capability-content">
+Leading API-first integrations across messaging, voice, CRM and enterprise contact center ecosystems.
+</div>
 </div>
 
 <div class="capability">
-    AI Agents & LLM Workflow Orchestration
-    <div class="capability-content">
-        Implementing intelligent automation systems leveraging AI agents and LLM-augmented orchestration models.
-    </div>
+AI Agents & LLM Workflow Orchestration
+<div class="capability-content">
+Implementing intelligent automation systems leveraging AI agents, LLM workflows and orchestration strategies.
 </div>
+</div>
+
+<h2>Selected Enterprise Engagements</h2>
+<p class="section-text">
+AI Virtual Agent Modernization – Reduced manual support dependency through intelligent automation architecture.<br><br>
+Enterprise CPaaS Integration Program – Designed scalable API-first deployment model accelerating go-live timelines.<br><br>
+Contact Center Reliability Engineering – Improved uptime by 35% through SIP trace diagnostics and optimization.
+</p>
+
+<h2>Architecture Philosophy</h2>
+<p class="section-text">
+AI-first, platform-centric design philosophy focused on interoperability, performance integrity, security and long-term scalability.
+</p>
+
+<h2>Certifications</h2>
+<p class="section-text">
+ITIL® 4 Foundation<br>
+ACIS – Avaya Certified Implementation Specialist
+</p>
+
+<h2>Contact</h2>
+<p class="section-text">
+Bengaluru, India<br>
+raol.sharma15@gmail.com<br>
+linkedin.com/in/rahul-sharma-8b9792142
+</p>
 
 </div>
 
@@ -205,9 +224,13 @@ footer {
 </footer>
 
 <script>
-document.querySelectorAll('.capability').forEach(item => {
-    item.addEventListener('click', () => {
-        item.classList.toggle('active');
+window.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".capability");
+
+    items.forEach(function (item) {
+        item.addEventListener("click", function () {
+            this.classList.toggle("active");
+        });
     });
 });
 </script>
